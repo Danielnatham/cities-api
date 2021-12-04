@@ -4,7 +4,7 @@
 
 * Linux
 * Git
-* Java 8
+* Java 11
 * Docker
 * IntelliJ Community
 * Heroku CLI
@@ -16,7 +16,7 @@
 * [Postgres Docker Hub](https://hub.docker.com/_/postgres)
 
 ```shell script
-docker run --name cities-db -d -p 5432:5432 -e POSTGRES_USER=postgres_user_city -e POSTGRES_PASSWORD=super_password -e POSTGRES_DB=cities postgres
+docker run --name cities-db -d -p 5432:5432 -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=root -e POSTGRES_DB=cities-api postgres
 ```
 
 ### Populate
@@ -71,8 +71,8 @@ select earth_distance(
 
 * [https://start.spring.io/](https://start.spring.io/)
 
-+ Java 8
-+ Gradle Project
++ Java 11
++ Maven Project
 + Jar
 + Spring Web
 + Spring Data JPA
